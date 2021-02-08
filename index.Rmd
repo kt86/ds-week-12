@@ -21,7 +21,7 @@ bezirke <- st_read("shp-bezirke/bezirke_berlin.shp")
 
 Interactive Gallery
 ===========
-
+Für die Valueboxen gibt es hier input <https://rmarkdown.rstudio.com/flexdashboard/using.html#value_boxes>
 
 Column {data-width=500}
 -----------------------------------------------------------------------
@@ -33,13 +33,15 @@ valueBox(nrow(unfaelle), icon = "fa-bicycle" )
 
 ### Number of Bicycle Accidents
 ```{r}
-valueBox(5000, icon = "fa-bicycle" )
+valueBox(5000, icon = "fa-bicycle", color = "warning" )
 ```
 
 Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Accident Locations
+
+This is some **text** here
 
 ```{r}
 # 1. Plot the dots themselves
